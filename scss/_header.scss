@@ -1,0 +1,58 @@
+
+header{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-bottom-style:solid;
+    border-width: 5px;
+    border-color: #D3D2B7;
+
+}
+.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar-brand img{
+    width: 240px;
+    object-fit: scale-down;
+    padding: 5px 5px 5px 15px; 
+    height: 130px;
+}
+.nav-item{
+    font-family:'Montserrat', sans-serif;;
+    font-style:normal;
+    font-size:18px;
+}
+.navbar-collapse {
+    flex-grow: 0;
+    align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link{
+color: $mainColor;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+color: $secondColor;
+}
+
+.menuHeader{
+    width: 900px;
+    padding: 20px;
+    ul li a{
+        text-decoration: none;
+        color: $mainColor;
+    }
+    ul li{
+        list-style-type: none;
+        padding: 5px;
+        align-items: center;
+        text-align: center;
+    }
+    ul li a:hover {
+        color: $secondColor;
+    }
+
+}

@@ -1,0 +1,87 @@
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDAD3;
+    border-top-style: solid ;
+    border-top-color: #E7B765;
+    border-width:5px;
+    height:350px;
+    width: 100%;
+}
+.footer img{
+    width: 300px;
+    object-fit: scale-down;
+    margin-left: 20px;
+}
+.menuFooter{
+    width: 100%px;
+    padding: 20px;
+    width: 130px;
+}
+.menuFooter ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: left;
+    font-family:'Montserrat', sans-serif;;
+    width: 120px;
+    margin: 5px;
+}
+.menuFooter ul li h3{
+    color: $mainColor;
+    font-style:bold;
+    font-size:18px;
+}
+.menuFooter ul li a{
+    text-decoration: none;
+    color: $mainColor;
+    font-style:normal;
+    font-size:14px;
+}
+.menuFooter ul li{
+    list-style-type: none;
+    padding: 5px;
+    align-items: center;
+    text-align: left;
+}
+.menuFooter ul li a:hover {
+    color: $secondColor;
+}
+.redesFooter{
+    width: 100%;
+    padding: 20px;
+    width: 80px;
+    height: 190px;
+}
+.redesFooter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    font-family:'Montserrat', sans-serif;;
+    width: 80px;
+    margin: 5px;
+}
+.redesFooter ul li h3{
+    color: $mainColor;
+    font-style:bold;
+    font-size:18px;
+    
+}
+.redesFooter ul li{
+    list-style-type: none;
+    padding: 5px;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    color: $mainColor;
+    font-style:normal;
+    font-size:14px;
+}
+.redesFooter ul li:hover {
+    color: $secondColor;
+}
