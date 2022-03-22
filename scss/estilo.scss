@@ -30,6 +30,76 @@ body{
     padding-bottom: 50px;
 }
 
+.titulo{
+    font-size:80px;
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+    font-family: 'Source code pro', sans-serif ;
+    align-content: center;
+    align-items:center;
+}
+ 
+.tituloInicio{
+    @extend .titulo;
+    color: #DF7B58;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloWorks{
+    @extend .titulo;
+    color: #E7B765;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloProjects{
+    @extend .titulo;
+    color: #E0503E;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloContact{
+    @extend .titulo;
+    color: #D36138;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloAbout{
+    @extend .titulo;
+    color: #FF9252;
+    text-shadow: 2px 2px 5px #24242477;
+}
+
+@mixin botones( $bgColor , $colorLetra , $tamanio ){
+ 
+    background-color:$bgColor;
+    color: $colorLetra;
+    @if $tamanio == "sm"{
+        width: 96px;
+        height: 44px;
+        border-radius:8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+    @else if $tamanio == "md"{
+        width: 165px;
+        height: 55px;
+        border-radius:8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+}
+.btnPrimary{
+    @include botones( #738566 , white , "sm")
+}
+.btnInicio{
+    @include botones( #738566 , white , "md")
+}
+
+
+
 
 
 @media screen and (max-width: 600px) {

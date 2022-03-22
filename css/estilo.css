@@ -57,15 +57,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   text-align: center; }
-  .intro h1 {
-    color: #DF7B58;
-    text-shadow: 2px 2px 5px #24242477;
-    font-size: 80px;
-    font-family: 'Source code pro', sans-serif;
-    font-weight: bold;
-    align-items: center;
-    padding: 10px;
-    align-content: center; }
   .intro p {
     color: #414141;
     font-size: 18px;
@@ -75,18 +66,6 @@ header {
     position: relative;
     width: 300px; }
   .intro button {
-    background-color: #738566;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 #18181846;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    height: 50px;
     transition-duration: 0.4s; }
     .intro button :hover {
       background-color: #C1D1B6;
@@ -228,15 +207,6 @@ header {
   padding: 20px 30px 20px 30px;
   width: 40%;
   height: 250px; }
-  .about h1 {
-    color: #DF7B58;
-    text-shadow: 2px 2px 5px #24242477;
-    font-size: 80px;
-    font-family: 'Source code pro', sans-serif;
-    font-weight: bold;
-    align-items: center;
-    padding: 10px;
-    align-content: center; }
   .about p {
     color: #414141;
     font-size: 18px;
@@ -311,15 +281,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   padding: 40px 0px 40px 0px; }
-  .introProyectos h1 {
-    color: #DF7B58;
-    text-shadow: 2px 2px 5px #24242477;
-    font-size: 80px;
-    font-family: 'Source code pro', sans-serif;
-    font-weight: bold;
-    align-items: center;
-    padding: 10px;
-    align-content: center; }
   .introProyectos p {
     color: #414141;
     font-size: 18px;
@@ -492,15 +453,6 @@ header {
   padding: 20px 30px 20px 30px;
   width: 1000px;
   height: 300px; }
-  .aboutFormulario h1 {
-    color: #DF7B58;
-    text-shadow: 2px 2px 5px #24242477;
-    font-size: 80px;
-    font-family: 'Source code pro', sans-serif;
-    font-weight: bold;
-    align-items: center;
-    padding: 10px;
-    align-content: center; }
   .aboutFormulario p {
     color: #414141;
     font-size: 18px;
@@ -537,10 +489,6 @@ header {
 
 .mb-3 {
   margin-top: 0%; }
-
-.btn-primary {
-  background-color: #738566;
-  border-color: #738566; }
 
 .footer {
   display: flex;
@@ -646,6 +594,59 @@ body {
   align-content: space-around;
   padding-top: 50px;
   padding-bottom: 50px; }
+
+.titulo, .tituloInicio, .tituloWorks, .tituloProjects, .tituloContact, .tituloAbout {
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-family: 'Source code pro', sans-serif;
+  align-content: center;
+  align-items: center; }
+
+.tituloInicio {
+  color: #DF7B58;
+  text-shadow: 2px 2px 5px #24242477; }
+
+.tituloWorks {
+  color: #E7B765;
+  text-shadow: 2px 2px 5px #24242477; }
+
+.tituloProjects {
+  color: #E0503E;
+  text-shadow: 2px 2px 5px #24242477; }
+
+.tituloContact {
+  color: #D36138;
+  text-shadow: 2px 2px 5px #24242477; }
+
+.tituloAbout {
+  color: #FF9252;
+  text-shadow: 2px 2px 5px #24242477; }
+
+.btnPrimary {
+  background-color: #738566;
+  color: white;
+  width: 96px;
+  height: 44px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
+
+.btnInicio {
+  background-color: #738566;
+  color: white;
+  width: 165px;
+  height: 55px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
 
 @media screen and (max-width: 600px) {
   /* inicio */
