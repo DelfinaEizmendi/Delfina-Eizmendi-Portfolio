@@ -17,7 +17,7 @@ body{
 .grillaIndex{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 500px 200px 500px;
+    grid-template-rows: 500px 150px 500px;
     grid-template-areas:". a1 a1 ."
                         ". a3 a3 ."
                         "a4 a5 a6 a7";
@@ -34,6 +34,8 @@ body{
     font-size:80px;
     text-align: center;
     font-weight: bold;
+    display: flex;
+    flex-wrap: nowrap;
     padding:10px;
     font-family: 'Source code pro', sans-serif ;
     align-content: center;
@@ -66,6 +68,7 @@ body{
     text-shadow: 2px 2px 5px #24242477;
 }
 
+
 @mixin botones( $bgColor , $colorLetra , $tamanio ){
  
     background-color:$bgColor;
@@ -74,6 +77,7 @@ body{
         width: 96px;
         height: 44px;
         border-radius:8px;
+        border: none;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -84,6 +88,7 @@ body{
         width: 165px;
         height: 55px;
         border-radius:8px;
+        border: none;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -136,35 +141,104 @@ gap: 20px;
 align-content: space-around;
 justify-content: center;
 } 
-.menuFooter ul{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: left;
+/* footer */
+.grillaFooter{
+    display: grid;
+    grid-template-columns:300px;
+    grid-template-rows:50px;
+    grid-template-areas:"a1"
+                        "a2"
+                        "a3"
+                        "a4"
+                        "a5";
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    
 }
-.footer img{
-width: 150px;
-object-fit: scale-down;
-margin-left: 20px;
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-width:15px;
+    border-bottom-width:50px;
+    height:600px;
+    width: 100%;
+    padding-top: 20px;
 }
-.menuFooter ul li h3{
-font-size:15px; 
+.footerLogo{
+    background-color:transparent;
+    background-size: contain;
+    height: 40px;
+    width: 245px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    img{
+        width:200px;
+        object-fit: scale-down;
+        position: static;
+    }
+    
 }
-.menuFooter ul li a{
-font-size:80%;
+.menuFooter{
+    width: 100%;
+    padding:15px;    
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: left;
+        font-family:'Montserrat', sans-serif;
+        width: 200px;
+        margin: 5px;
+    }
+    ul li h3{
+        font-size:18px;
+    }
+    ul li a{
+        font-size:80%;
+    }
 }
-.redesFooter ul{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: left;
+
+.redesFooter{
+    width: 100%;
+    padding:15px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: left;
+        font-family:'Montserrat', sans-serif;
+        width: 200px;
+        margin: 5px;
+    }
+    ul li h3{
+        font-size:18px;
+    }
+    ul li a{
+        font-size:80%;
+    }
+
 }
-.redesFooter ul li h3{
-font-size:15px;
+.footerBottom{
+   
+   p{
+        font-size:12px; 
+        margin-top: 0;
+        margin-bottom: 0 !important;
+        padding-top: 45px;
+    }
 }
-.redesFooter ul li{
-font-size:80%;
-}
+
+
     /* trabajos/proyectos */
 .grillaGaleria {
 display: grid;
@@ -315,6 +389,30 @@ gap: 20px;
 align-content: space-around;
 justify-content: center;
 } 
+/* footer */
+.grillaFooter{
+    column-gap: 10px;  
+}
+.footer{
+    width: 100%;
+}
+.footerLogo{
+    background-color:transparent;
+    background-size: contain;
+    height: 40px;
+    width: 245px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    img{
+        width:200px;
+        object-fit: scale-down;
+        position: static;
+    }
+    
+}
+
 /* trabajos/proyectos */
 .grillaGaleria {
 display: grid;

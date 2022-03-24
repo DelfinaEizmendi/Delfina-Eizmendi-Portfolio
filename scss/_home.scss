@@ -59,7 +59,7 @@
     text-align: center;
     background-color: $fondoRubros;
     background-size: contain;
-    height: 250px;
+    height: 350px;
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -75,7 +75,23 @@
         padding: 10px;
         text-shadow: 2px 2px 5px #2424243d;
     }
-}
+    button{
+            background-color: #DD6237;
+            border: none;
+            border-radius:8px;
+            color: $mainColor;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family:'Montserrat', sans-serif;
+            font-size: 16px;
+            height:40px;
+            width:130px;
+            transition-duration: 0.4s;  
+            color: white;  
+        }
+    }
+
 
 .foto2{
     grid-area: a5;
@@ -86,7 +102,7 @@
     text-align: center;
     background-color: $fondoRubros;
     background-size: contain;
-    height: 250px;
+    height: 350px;
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -101,6 +117,21 @@
         color: $thirdColor;
         padding: 10px;
         text-shadow: 2px 2px 5px #2424243d;
+    }
+    button{
+        background-color: #DD6237;
+        border: none;
+        border-radius:8px;
+        color: $mainColor;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+        height:40px;
+        width:130px;
+        transition-duration: 0.4s;  
+        color: white;  
     }
 }
 .foto3{
@@ -112,12 +143,12 @@
     text-align: center;
     background-color: $fondoRubros;
     background-size: contain;
-    height: 250px;
+    height: 350px;
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     img{
-        width: 150px;
+        width: 250px;
         object-fit: scale-down;
         padding: 20px 50px 20px 50px;    
     }
@@ -127,6 +158,21 @@
         color: $thirdColor;
         padding: 10px;
         text-shadow: 2px 2px 5px #2424243d;
+    }
+    button{
+        background-color: #DD6237;
+        border: none;
+        border-radius:8px;
+        color: $mainColor;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+        height:40px;
+        width:130px;
+        transition-duration: 0.4s;  
+        color: white;  
     }
 }
 
@@ -139,12 +185,12 @@
     text-align: center;
     background-color: $fondoRubros;
     background-size: contain;
-    height: 250px;
+    height: 350px;
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     img{
-        width: 150px;
+        width: 250px;
         object-fit: scale-down;
         padding: 20px 50px 20px 50px;    
     }
@@ -154,5 +200,20 @@
         color: $thirdColor;
         padding: 10px;
         text-shadow: 2px 2px 5px #2424243d;
+    }
+    button{
+        background-color: #DD6237;
+        border: none;
+        border-radius:8px;
+        color: $mainColor;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+        height:40px;
+        width:130px;
+        transition-duration: 0.4s;  
+        color: white;  
     }
 }
