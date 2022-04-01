@@ -1,8 +1,9 @@
 .grillaFooter{
     display: grid;
     grid-template-columns:272px 272px 272px 272px;
-    grid-template-rows: 300px 50px;
-    grid-template-areas:"a1 a2 a3 a4"
+    grid-template-rows:  15px 300px 50px;
+    grid-template-areas:"a0 a0 a0 a0"
+                        "a1 a2 a3 a4"
                         "a5 a5 . .";
     column-gap: 52px;
     margin-right: 99px;
@@ -22,14 +23,25 @@
     background-color: #FCD9CF;
     border-top-style: solid ;
     border-top-color: #E7B765;
-    border-top-width:15px;
+    border-top-width:25px;
     border-bottom-style: solid;
     border-bottom-color:#FFC0AF;
     border-bottom-width:50px;
-    height:365px;
+    height:375px;
     width: 100%;
     padding-top: 35px;
 }
+
+.footerTop{
+    grid-area: a0;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:transparent;
+    background-size: contain;
+    width: 100%;
+    color: white;
+}
+
 .footerLogo{
     grid-area:a1;
     background-color:transparent;

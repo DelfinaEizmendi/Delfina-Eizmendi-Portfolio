@@ -1,0 +1,93 @@
+
+.grillaIndex{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 500px 150px 500px;
+    grid-template-areas:". a1 a1 ."
+                        ". a3 a3 ."
+                        "a4 a5 a6 a7";
+    row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.titulo{
+    font-size:80px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: nowrap;
+    padding:10px;
+    font-family: 'Source code pro', sans-serif ;
+    align-content: center;
+    align-items:center;
+}
+ 
+.tituloInicio{
+    @extend .titulo;
+    color: #DF7B58;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloWorks{
+    @extend .titulo;
+    color: #E7B765;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloProjects{
+    @extend .titulo;
+    color: #E0503E;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloContact{
+    @extend .titulo;
+    color: #D36138;
+    text-shadow: 2px 2px 5px #24242477;
+}
+.tituloAbout{
+    @extend .titulo;
+    color: #FF9252;
+    text-shadow: 2px 2px 5px #24242477;
+}
+
+
+@mixin botones( $bgColor , $colorLetra , $tamanio ){
+ 
+    background-color:$bgColor;
+    color: $colorLetra;
+    @if $tamanio == "sm"{
+        width: 96px;
+        height: 44px;
+        border-radius:8px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+    @else if $tamanio == "md"{
+        width: 165px;
+        height: 55px;
+        border-radius:8px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+}
+.btnPrimary{
+    @include botones( #738566 , white , "sm")
+}
+.btnInicio{
+    @include botones( #738566 , white , "md")
+}
+
+
+
+

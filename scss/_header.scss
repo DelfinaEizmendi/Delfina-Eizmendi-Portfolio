@@ -21,6 +21,14 @@ header{
     padding-top: 23px;
     padding-bottom: 8px;
 }
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: $mainColor;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: $secondColor;
+}
+
+
 .navbar-brand{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -44,12 +52,7 @@ header{
     align-items: center;
 }
 
-.navbar-light .navbar-nav .nav-item .nav-link{
-    color: $mainColor;
-}
-.navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: $secondColor;
-}
+
 .menuHeader{
     width: 605px;
     height: 54px;
