@@ -257,8 +257,7 @@ font-size:15px;
     font-size:15px;
 }
 .work5 img{
-    height: 100%;
-    object-fit: scale-down; 
+    height: 100%; 
 }
 .work5 h2{
     font-size:15px; 
@@ -382,12 +381,11 @@ font-size:15px;
     flex-direction: column;
     width: 80%;
     height: 550px;
-    margin-left: 85px;
-    margin-right: 85px;
     .titulos{
         width: 90%;
         .tituloInicio{
         font-size: 50px;
+        width: 514px;
     }
     }
     .descripcion{
@@ -465,8 +463,7 @@ object-fit: scale-down;
 font-size:15px;
 }
 .work5 img{
-height: 100%;
-object-fit: scale-down; 
+height: 100%; 
 }
 .work5 h2{
 font-size:15px;
