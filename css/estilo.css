@@ -190,7 +190,6 @@ header {
       font-family: 'Montserrat', sans-serif;
       align-items: center;
       padding: 10px;
-      position: relative;
       margin: 0px; }
   .intro .botones {
     align-items: right;
@@ -1214,8 +1213,7 @@ header {
   .work4 h2 {
     font-size: 15px; }
   .work5 img {
-    height: 100%;
-    object-fit: scale-down; }
+    height: 100%; }
   .work5 h2 {
     font-size: 15px; }
   .work6 img {
@@ -1303,13 +1301,12 @@ header {
   .intro {
     flex-direction: column;
     width: 80%;
-    height: 550px;
-    margin-left: 85px;
-    margin-right: 85px; }
+    height: 550px; }
     .intro .titulos {
       width: 90%; }
       .intro .titulos .tituloInicio {
-        font-size: 50px; }
+        font-size: 50px;
+        width: 514px; }
     .intro .descripcion {
       width: 90%; }
     .intro .botones {
@@ -1360,8 +1357,7 @@ header {
   .work4 h2 {
     font-size: 15px; }
   .work5 img {
-    height: 100%;
-    object-fit: scale-down; }
+    height: 100%; }
   .work5 h2 {
     font-size: 15px; }
   .work6 img {
