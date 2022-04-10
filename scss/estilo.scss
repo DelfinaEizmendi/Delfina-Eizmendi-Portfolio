@@ -1,5 +1,4 @@
 @import'./general';
-@import'./mediaQueries';
 @import './variables';
 @import'./header';
 @import'./home';
@@ -7,6 +6,7 @@
 @import'./projects';
 @import'./form';
 @import'./footer';
+@import'./mediaQueries';
 
 *{
     padding: 0;

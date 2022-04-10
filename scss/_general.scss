@@ -1,56 +1,47 @@
-
-.grillaIndex{
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 500px 150px 500px;
-    grid-template-areas:". a1 a1 ."
-                        ". a3 a3 ."
-                        "a4 a5 a6 a7";
-    row-gap: 50px;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: space-around;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.titulo{
-    font-size:80px;
-    text-align: center;
-    font-weight: bold;
-    display: flex;
-    flex-wrap: nowrap;
-    padding:10px;
-    font-family: 'Source code pro', sans-serif ;
-    align-content: center;
-    align-items:center;
+@mixin titulos( $bgColor , $colorLetra , $tamanio ){
+ 
+    background-color:$bgColor;
+    color: $colorLetra ;
+    @if $tamanio == "sm"{
+        font-size:65px;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: nowrap;
+        padding:10px;
+        font-family: 'Source code pro', sans-serif ;
+        align-content: center;
+        align-items:center;
+        text-align: left;
+        text-shadow: 2px 2px 5px #2424242b;
+    }
+    @else if $tamanio == "md"{
+        font-size:80px;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: nowrap;
+        padding:10px;
+        font-family: 'Source code pro', sans-serif ;
+        align-content: center;
+        align-items:center;
+        text-shadow: 2px 2px 5px #2424242b;
+    }
 }
  
 .tituloInicio{
-    @extend .titulo;
-    color: #DF7B58;
-    text-shadow: 2px 2px 5px #24242477;
+    @include titulos(#F0F0E7, #DD6237,"md");
 }
 .tituloWorks{
-    @extend .titulo;
-    color: #E7B765;
-    text-shadow: 2px 2px 5px #24242477;
+    @include titulos(#F0F0E7, #DD6237, "md");
 }
 .tituloProjects{
-    @extend .titulo;
-    color: #E0503E;
-    text-shadow: 2px 2px 5px #24242477;
+    @include titulos(#F0F0E7,#DD6237, "md");
 }
 .tituloContact{
-    @extend .titulo;
-    color: #D36138;
-    text-shadow: 2px 2px 5px #24242477;
+    @include titulos(#F0F0E7, #DD6237, "sm");
 }
 .tituloAbout{
-    @extend .titulo;
-    color: #FF9252;
-    text-shadow: 2px 2px 5px #24242477;
+    @include titulos(#F0F0E7, #DD6237, "md");
 }
 
 
