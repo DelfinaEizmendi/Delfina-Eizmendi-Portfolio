@@ -121,6 +121,42 @@ object-fit: scale-down;
     }
 }
 /* inicio */
+.intro{
+    flex-direction: column;
+    height: 650px;
+    .titulos{
+        width: 90%;
+        .tituloInicio{
+        font-size: 50px;
+    }
+    }
+    .descripcion{
+        width: 90%;
+    }
+    .botones{
+        padding-left: 145px;
+    }
+}
+.aboutRubros{
+    height: 1300px;
+    .rubrosTitulo{
+        width: 100%;
+    }
+    .rubrosTipos{
+
+    flex-direction: column;
+    gap: 20px;
+    .foto1{
+        width: 100%;
+    }
+    .foto2{
+        width: 100%;
+    }
+    .foto3{
+        width: 100%;
+    }
+    }
+}
 
 /* sobre mi */
     .mainAbout{
@@ -236,7 +272,9 @@ font-size:15px;
 }
 
 /* contacto */
-
+.mainFormulario{
+    height:500px;
+}
 .aboutFormulario{
     width: 80%;
     height: 450px;
@@ -253,12 +291,12 @@ font-size:15px;
     width: 100%;
 }
 
-.g3{
+.g-3{
     width: 330px;
 }
+}
 
-
-@media screen and (min-width: 600px) and (max-width:1239px) {
+@media screen and (min-width: 600px) and (max-width:1239px){
 /*header*/
 .menuHeader ul {
     display: flex;
@@ -339,7 +377,46 @@ font-size:15px;
         margin-bottom: 0 !important;
     }
 }
-
+/* inicio */
+.intro{
+    flex-direction: column;
+    width: 80%;
+    height: 550px;
+    margin-left: 85px;
+    margin-right: 85px;
+    .titulos{
+        width: 90%;
+        .tituloInicio{
+        font-size: 50px;
+    }
+    }
+    .descripcion{
+        width: 90%;
+    }
+    .botones{
+        padding-left: 65%;
+    }
+}
+.aboutRubros{
+    height: 1300px;
+    .rubrosTitulo{
+        width: 100%;
+    }
+    .rubrosTipos{
+    width: 50%;
+    flex-direction:column;
+    gap: 20px;
+    .foto1{
+        width: 100%;
+    }
+    .foto2{
+        width: 100%;
+    }
+    .foto3{
+        width: 100%;
+    }
+    }
+}
 
 /* trabajos/proyectos */
 .grillaGaleria {
@@ -447,11 +524,18 @@ height:200px;
 /* contacto */
 .mainFormulario{
 width:100%;
-height:300px;
+height:350px;
 }
 .aboutFormulario{
-width:80%;
+width:90%;
+flex-direction: row;
+h1{
+    text-align:left;
+    font-size: 250%;
 }
-.aboutFormulario h1{
-font-size:50px;
+p{
+    width:100%;
+}
+}
+
 }

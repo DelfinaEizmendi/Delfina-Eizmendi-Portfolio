@@ -1124,6 +1124,30 @@ header {
       margin-top: 0;
       margin-bottom: 0 !important; }
   /* inicio */
+  .intro {
+    flex-direction: column;
+    height: 650px; }
+    .intro .titulos {
+      width: 90%; }
+      .intro .titulos .tituloInicio {
+        font-size: 50px; }
+    .intro .descripcion {
+      width: 90%; }
+    .intro .botones {
+      padding-left: 145px; }
+  .aboutRubros {
+    height: 1300px; }
+    .aboutRubros .rubrosTitulo {
+      width: 100%; }
+    .aboutRubros .rubrosTipos {
+      flex-direction: column;
+      gap: 20px; }
+      .aboutRubros .rubrosTipos .foto1 {
+        width: 100%; }
+      .aboutRubros .rubrosTipos .foto2 {
+        width: 100%; }
+      .aboutRubros .rubrosTipos .foto3 {
+        width: 100%; }
   /* sobre mi */
   .mainAbout {
     flex-direction: column;
@@ -1201,7 +1225,6 @@ header {
     font-size: 15px; }
   /* contacto */
   .mainFormulario {
-    width: 100%;
     height: 500px; }
   .aboutFormulario {
     width: 80%;
@@ -1214,7 +1237,9 @@ header {
     width: 100%; }
   .aboutFormulario p {
     font-size: 15px;
-    width: 100%; } }
+    width: 100%; }
+  .g-3 {
+    width: 330px; } }
 
 @media screen and (min-width: 600px) and (max-width: 1239px) {
   /*header*/
@@ -1274,6 +1299,35 @@ header {
     font-size: 12px;
     margin-top: 0;
     margin-bottom: 0 !important; }
+  /* inicio */
+  .intro {
+    flex-direction: column;
+    width: 80%;
+    height: 550px;
+    margin-left: 85px;
+    margin-right: 85px; }
+    .intro .titulos {
+      width: 90%; }
+      .intro .titulos .tituloInicio {
+        font-size: 50px; }
+    .intro .descripcion {
+      width: 90%; }
+    .intro .botones {
+      padding-left: 65%; }
+  .aboutRubros {
+    height: 1300px; }
+    .aboutRubros .rubrosTitulo {
+      width: 100%; }
+    .aboutRubros .rubrosTipos {
+      width: 50%;
+      flex-direction: column;
+      gap: 20px; }
+      .aboutRubros .rubrosTipos .foto1 {
+        width: 100%; }
+      .aboutRubros .rubrosTipos .foto2 {
+        width: 100%; }
+      .aboutRubros .rubrosTipos .foto3 {
+        width: 100%; }
   /* trabajos/proyectos */
   .grillaGaleria {
     display: grid;
@@ -1345,21 +1399,19 @@ header {
     font-size: 15px; }
   .mainUbicacion iframe {
     width: 400px;
-    height: 200px; } }
-
-/* contacto */
-.mainFormulario {
-  width: 100%;
-  height: 300px; }
-
-.aboutFormulario {
-  width: 80%; }
-
-.aboutFormulario h1 {
-  font-size: 50px; }
-
-.aboutFormulario p {
-  font-size: 15px; }
+    height: 200px; }
+  /* contacto */
+  .mainFormulario {
+    width: 100%;
+    height: 350px; }
+  .aboutFormulario {
+    width: 90%;
+    flex-direction: row; }
+    .aboutFormulario h1 {
+      text-align: left;
+      font-size: 250%; }
+    .aboutFormulario p {
+      width: 100%; } }
 
 * {
   padding: 0;
